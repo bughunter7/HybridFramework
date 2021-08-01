@@ -12,52 +12,40 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
-
+	
 	public static Properties prop;
-	WebDriver driver;
-
-	public static Properties configreader()
-	{
-		prop=new Properties();
+	public static WebDriver driver;
+	
+	public BaseDriver() {
+		// TODO Auto-generated constructor stub
 		try {
-			FileInputStream fis=new FileInputStream("C:\\Users\\user\\eclipse-workspace\\ParaBank_Automation\\src\\main\\java\\com\\para\\config\\config.properties");
-			try {
-				prop.load(fis);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			prop = new Properties();
+			FileInputStream ip = new FileInputStream("C:\\Users\\user\\eclipse-workspace\\HybridFramework\\src\\main\\java\\com\\para\\config\\config.properties");
+			prop.load(ip);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return prop;
+		
 	}
-
-	public WebDriver initdriver() {
-		String browserName=configreader().getProperty("browser");
-		//String browserName = prop.getProperty("browser");
+	
+	public void initilization()
+	{
+		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-
 			driver = new ChromeDriver();
-		} else if (browserName.equals("firefox")) {
+		}
+		else if (browserName.equals("ff")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-
-		} else {
-			System.out.println("Not a valid browser...please check config.properties");
 		}
-
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-
-		driver.get("https://parabank.parasoft.com/parabank/index.htm");
-		return driver;
-
 		
-
+		driver.get("https://parabank.parasoft.com/parabank/index.htm");
 	}
+	
+	
 
 }

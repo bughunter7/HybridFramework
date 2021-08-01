@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-31T21:33:28 IST" name="Default suite" finished-at="2021-07-31T21:33:36 IST" duration-ms="8410">
+  <suite started-at="2021-08-01T16:31:38 IST" name="Default suite" finished-at="2021-08-01T16:31:48 IST" duration-ms="9886">
     <groups>
     </groups>
-    <test started-at="2021-07-31T21:33:28 IST" name="Default test" finished-at="2021-07-31T21:33:36 IST" duration-ms="8410">
-      <class name="com.para.testcase.DemoRun">
-        <test-method signature="test()[pri:0, instance:com.para.testcase.DemoRun@48fa0f47]" started-at="2021-07-31T21:33:28 IST" name="test" finished-at="2021-07-31T21:33:36 IST" duration-ms="8333" status="PASS">
+    <test started-at="2021-08-01T16:31:38 IST" name="Default test" finished-at="2021-08-01T16:31:48 IST" duration-ms="9886">
+      <class name="com.para.testcase.TestClass">
+        <test-method signature="login()[pri:0, instance:com.para.testcase.TestClass@1677d1]" started-at="2021-08-01T16:31:38 IST" name="login" finished-at="2021-08-01T16:31:48 IST" duration-ms="9818" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.para.testcase.DemoRun -->
+        </test-method> <!-- login -->
+      </class> <!-- com.para.testcase.TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
