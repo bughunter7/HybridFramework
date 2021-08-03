@@ -25,11 +25,17 @@ public class PayBillPage {
 	By vaccount = By.xpath("//*[@name='verifyAccount']");
 	By amount = By.xpath("//*[@name='amount']");
 	By sendpayment = By.xpath("(//*[@class='button'])[2]");
+	
+	By messagetitle=By.xpath("//*[@class='ng-scope']/div[2]/h1");
 
 	public WebElement paybill() {
 		return driver.findElement(paybill);
 	}
 
+	public WebElement payeename()
+	{
+		return driver.findElement(payeename);
+	}
 	public WebElement address() {
 		return driver.findElement(address);
 	}
@@ -65,5 +71,11 @@ public class PayBillPage {
 	public WebElement sendpayment() {
 		return driver.findElement(sendpayment);
 	}
+	
+	public WebElement message()
+	{
+		return driver.findElement(messagetitle);
+	}
+	
 
 }

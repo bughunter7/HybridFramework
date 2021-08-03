@@ -3,18 +3,19 @@ package com.para.testcase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.para.base.BaseDriver;
 import com.para.listener.CustomListener;
 import com.para.pages.RequestLoanPage;
 import com.para.utilities.WebUtility;
 
-public class ApplyLoanNegativeScenario extends CustomListener {
+public class ApplyLoanNegativeScenario extends BaseDriver {
 	
 	WebUtility util=new WebUtility();
 	RequestLoanPage rl;
 	@Test(priority = 1)
 	public void login()
 	{
-		//initilization();
+		initilization();
 		util.loginutil();
 	}
 	
@@ -28,7 +29,7 @@ public class ApplyLoanNegativeScenario extends CustomListener {
 	@Test(priority = 3)
 	public void fillinloandetails()
 	{
-		rl.amouunt().sendKeys("10000000000000000");
+		rl.amouunt().sendKeys("1000000");
 		rl.downpayment().sendKeys("100");
 		
 	}

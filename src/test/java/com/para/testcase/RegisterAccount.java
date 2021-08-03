@@ -6,25 +6,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.para.base.BaseDriver;
-import com.para.listener.CustomListener;
+
 import com.para.pages.RegisterPage;
 import com.para.utilities.WebUtility;
 
-public class RegisterAccount extends CustomListener {
+public class RegisterAccount extends BaseDriver {
 
-	public static RegisterPage rp;
-	
-	public static String username;
-	
-	static String  fstr;
+	RegisterPage rp;
 	
 	WebUtility util=new WebUtility();
-	
 	
 	
 	@Test(priority = 1)
 	public void navigatetoregister()
 	{
+		initilization();
 		rp=new RegisterPage(driver);
 		rp.registerlink().click();
 	}
@@ -42,10 +38,11 @@ public class RegisterAccount extends CustomListener {
 	}
 	
 	@Test(priority = 4)
-	public static void verifyregistration()
+	public void verifyregistration()
 	{
+		String message=rp.message().getText();
 		String expected="Your account was created successfully. You are now logged in.";
-		Assert.assertEquals(rp.message().getText(), expected);
+		Assert.assertEquals(message, expected);
 	}
 	
 	

@@ -7,7 +7,7 @@ import com.para.base.BaseDriver;
 import com.para.listener.CustomListener;
 import com.para.utilities.WebUtility;
 
-public class LoginAccount extends CustomListener {
+public class LoginAccount extends BaseDriver {
 	
 	WebUtility util=new WebUtility();
 	
@@ -15,7 +15,7 @@ public class LoginAccount extends CustomListener {
 	@Test
 	public void login()
 	{
-		//initilization();
+		initilization();
 		util.loginutil();
 		
 		

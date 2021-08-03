@@ -8,14 +8,14 @@ import com.para.listener.CustomListener;
 import com.para.pages.RequestLoanPage;
 import com.para.utilities.WebUtility;
 
-public class ApplyLoanPositiveScenario extends CustomListener{
+public class ApplyLoanPositiveScenario extends BaseDriver{
 
 	WebUtility util=new WebUtility();
 	RequestLoanPage rl;
 	@Test(priority = 1)
 	public void login()
 	{
-		//initilization();
+		initilization();
 		util.loginutil();
 	}
 	
@@ -45,6 +45,7 @@ public class ApplyLoanPositiveScenario extends CustomListener{
 		Thread.sleep(5000);
 		String status=rl.status().getText();
 		System.out.println(status);
+		
 		String expected="Congratulations, your loan has been approved.";
 		Assert.assertEquals(status, expected);
 	}

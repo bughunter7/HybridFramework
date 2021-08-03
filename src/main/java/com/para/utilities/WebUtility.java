@@ -20,7 +20,7 @@ public class WebUtility extends BaseDriver{
 		
 		lp = new LoginPage(driver);
 		
-		lp.username().sendKeys("testuser xnVso");
+		lp.username().sendKeys("testuser ayTAj");
 		lp.password().sendKeys("test123");
 		lp.login().click();
 
