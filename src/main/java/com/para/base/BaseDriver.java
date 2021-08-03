@@ -38,11 +38,17 @@ public class BaseDriver {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
-		else if (browserName.equals("ff")) {
+		else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
+		else
+		{
+			System.out.println("unable to invoke browser.....please check config file.");
+		}
 		
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
 	}
 	

@@ -1,18 +1,23 @@
 package com.para.testcase;
 
+
 import org.testng.annotations.Test;
 
 import com.para.base.BaseDriver;
+import com.para.listener.CustomListener;
 import com.para.utilities.WebUtility;
 
-public class TestClass extends BaseDriver {
+public class LoginAccount extends CustomListener {
 	
 	WebUtility util=new WebUtility();
+	
+	RegisterAccount rac=new RegisterAccount();
 	@Test
 	public void login()
 	{
-		initilization();
+		//initilization();
 		util.loginutil();
+		
 		
 	}
 
