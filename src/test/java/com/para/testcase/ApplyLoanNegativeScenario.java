@@ -8,14 +8,14 @@ import com.para.listener.CustomListener;
 import com.para.pages.RequestLoanPage;
 import com.para.utilities.WebUtility;
 
-public class ApplyLoanNegativeScenario extends BaseDriver {
+public class ApplyLoanNegativeScenario extends CustomListener {
 	
 	WebUtility util=new WebUtility();
 	RequestLoanPage rl;
 	@Test(priority = 1)
 	public void login()
 	{
-		initilization();
+		//initilization();
 		util.loginutil();
 	}
 	

@@ -15,7 +15,7 @@ public class ApplyLoanPositiveScenario extends BaseDriver{
 	@Test(priority = 1)
 	public void login()
 	{
-		initilization();
+		//initilization();
 		util.loginutil();
 	}
 	

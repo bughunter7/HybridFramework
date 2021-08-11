@@ -1,20 +1,25 @@
 package com.para.testcase;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.para.base.BaseDriver;
+import com.para.listener.CustomListener;
 import com.para.pages.PayBillPage;
+import com.para.utilities.DataDriven;
 import com.para.utilities.WebUtility;
 
-public class PayBill extends BaseDriver {
+public class PayBill extends CustomListener {
 
 	WebUtility util = new WebUtility();
+	
 	PayBillPage pb;
 
 	@Test(priority = 1)
 	public void login() {
-		initilization();
+	//	initilization();
 		util.loginutil();
 	}
 
@@ -25,16 +30,9 @@ public class PayBill extends BaseDriver {
 	}
 
 	@Test(priority = 3)
-	public void fillinalldetails() {
-		pb.payeename().sendKeys("test");
-		pb.address().sendKeys("test address");
-		pb.city().sendKeys("test city");
-		pb.state().sendKeys("test state");
-		pb.zipcode().sendKeys("1234");
-		pb.phone().sendKeys("999999999");
-		pb.account().sendKeys("1234");
-		pb.vaccount().sendKeys("1234");
-		pb.amount().sendKeys("1");
+	public void fillinalldetails() throws IOException {
+		
+		util.fillinbilldetails();
 	}
 
 	@Test(priority = 4)

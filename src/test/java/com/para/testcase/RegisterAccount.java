@@ -1,16 +1,17 @@
 package com.para.testcase;
 
-
+import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.para.base.BaseDriver;
-
+import com.para.listener.CustomListener;
+import com.para.listener.Inittest;
 import com.para.pages.RegisterPage;
 import com.para.utilities.WebUtility;
 
-public class RegisterAccount extends BaseDriver {
+public class RegisterAccount extends CustomListener {
 
 	RegisterPage rp;
 	
@@ -20,13 +21,13 @@ public class RegisterAccount extends BaseDriver {
 	@Test(priority = 1)
 	public void navigatetoregister()
 	{
-		initilization();
+		//initilization();
 		rp=new RegisterPage(driver);
 		rp.registerlink().click();
 	}
 	
 	@Test(priority = 2)
-	public void fillinalldetails()
+	public void fillinalldetails() throws IOException, InterruptedException
 	{
 		util.fillregistrationdetails();
 		
