@@ -12,3 +12,4 @@ Dynamic html reports are created using Extent report plugin
 # Report Screenshots
 
 <img src="https://github.com/bughunter7/HybridFramework/blob/master/Dashboard.PNG" height="400px" width="600px" alt="QA SHUBHAM" align="center">
+<img src="https://github.com/bughunter7/HybridFramework/blob/master/Dashboard.PNG" height="400px" width="600px" alt="QA SHUBHAM" align="center">
