@@ -3,22 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.para.testcase.RegisterAccount">
+      <class name="com.para.testcase.Login">
         <methods>
           <include name="beforeMethod"/>
-          <include name="fillinalldetails"/>
           <include name="afterTest"/>
           <include name="aftersuite"/>
-          <include name="navigatetoregister"/>
+          <include name="login"/>
           <include name="beforeClassrun"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="verifyregistration"/>
           <include name="beforesuite"/>
           <include name="afterClassrun"/>
-          <include name="submitregisterbutton"/>
         </methods>
-      </class> <!-- com.para.testcase.RegisterAccount -->
+      </class> <!-- com.para.testcase.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,7 @@
 package com.para.testcase;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.testng.Assert;
@@ -7,7 +9,7 @@ import org.testng.annotations.Test;
 
 import com.para.base.BaseDriver;
 import com.para.listener.CustomListener;
-import com.para.listener.Inittest;
+
 import com.para.pages.RegisterPage;
 import com.para.utilities.WebUtility;
 
@@ -43,7 +45,7 @@ public class RegisterAccount extends CustomListener {
 	{
 		String message=rp.message().getText();
 		String expected="Your account was created successfully. You are now logged in.";
-		Assert.assertEquals(message, expected);
+		AssertJUnit.assertEquals(message, expected);
 	}
 	
 	

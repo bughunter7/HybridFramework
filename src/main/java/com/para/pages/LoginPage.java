@@ -12,7 +12,7 @@ public class LoginPage {
 
 	By username = By.xpath("//*[@name='username']");
 	By password = By.xpath("//*[@name='password']");
-	By login=By.xpath("(//*[@class='login'])[3]/input");
+	By login=By.xpath("(//*[@class='logi'])[3]/input");
 
 	public LoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub

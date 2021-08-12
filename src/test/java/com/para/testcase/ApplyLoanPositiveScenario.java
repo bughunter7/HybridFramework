@@ -1,5 +1,7 @@
 package com.para.testcase;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,7 +10,7 @@ import com.para.listener.CustomListener;
 import com.para.pages.RequestLoanPage;
 import com.para.utilities.WebUtility;
 
-public class ApplyLoanPositiveScenario extends BaseDriver{
+public class ApplyLoanPositiveScenario extends CustomListener{
 
 	WebUtility util=new WebUtility();
 	RequestLoanPage rl;
@@ -47,6 +49,6 @@ public class ApplyLoanPositiveScenario extends BaseDriver{
 		System.out.println(status);
 		
 		String expected="Congratulations, your loan has been approved.";
-		Assert.assertEquals(status, expected);
+		AssertJUnit.assertEquals(status, expected);
 	}
 }

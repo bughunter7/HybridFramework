@@ -1,5 +1,7 @@
 package com.para.testcase;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -46,7 +48,7 @@ public class ApplyLoanNegativeScenario extends CustomListener {
 		String status=rl.status().getText();
 		System.out.println(status);
 		String expected="We cannot grant a loan in that amount with your available funds.";
-		Assert.assertEquals(status, expected);
+		AssertJUnit.assertEquals(status, expected);
 	}
 
 }

@@ -77,7 +77,7 @@ public class BaseDriver {
 		TakesScreenshot tkscr = (TakesScreenshot) driver;
 
 		File src = tkscr.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir") + "/TestCaseScreenShots/" + System.currentTimeMillis() + ".png";
+		String path = System.getProperty("user.dir") + "/ScreenShotonFailure/" +Testcase+"_" + System.currentTimeMillis() + ".png";
 
 		File destination = new File(path);
 
