@@ -11,7 +11,7 @@ Dynamic html reports are created using Extent report plugin
 
 # Report Screenshots
 
-<img src="https://github.com/bughunter7/HybridFramework/blob/master/Dashboard.PNG" height="400px" width="200px" alt="QA SHUBHAM" align="center">
-<img src="https://github.com/bughunter7/HybridFramework/blob/master/FilteringWithTags.PNG" height="400px" width="200px" alt="QA SHUBHAM" align="center">
-<img src="https://github.com/bughunter7/HybridFramework/blob/master/TestCaseLog.PNG" height="400px" width="200px" alt="QA SHUBHAM" align="center">
-<img src="https://github.com/bughunter7/HybridFramework/blob/master/TestCases.PNG" height="400px" width="200px" alt="QA SHUBHAM" align="center">
+<img src="https://github.com/bughunter7/HybridFramework/blob/master/Dashboard.PNG" height="600px" width="400px" alt="QA SHUBHAM" align="center">
+<img src="https://github.com/bughunter7/HybridFramework/blob/master/FilteringWithTags.PNG" height="600px" width="400px" alt="QA SHUBHAM" align="center">
+<img src="https://github.com/bughunter7/HybridFramework/blob/master/TestCaseLog.PNG" height="600px" width="400px" alt="QA SHUBHAM" align="center">
+<img src="https://github.com/bughunter7/HybridFramework/blob/master/TestCases.PNG" height="600px" width="400px" alt="QA SHUBHAM" align="center">
